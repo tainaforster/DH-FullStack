@@ -173,5 +173,4 @@ console.log (nomeCompleto);
 console.log (nomeCompleto + ' ' + idade); // Mesmo a variavel sendo Number na concatenaçao o numero
 //                                          // acaba sendo convertido para String.
                                          
-// luquinhas está aqui
 

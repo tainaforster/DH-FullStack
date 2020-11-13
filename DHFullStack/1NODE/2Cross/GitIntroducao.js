@@ -45,7 +45,9 @@
 
 //  git commit -m "mensagem" - comita (salva) as modificaçoes feitas
 
-//  git push origin master - envia as modificaçoes ao repositorio remoto.
+//  git commit -a -m "mensagem" - ja adiciona os arquivos e commita
+
+//  git push origin main - envia as modificaçoes ao repositorio remoto.
 
 
 // ls - lista os arquivos que estão na pasta
@@ -54,7 +56,9 @@
 // Fetch - de onde vou trazer os arquivos;
 // Push - para onde vou enviar
 
+
 // mkdir (nome da pasta) - cria uma pasta onde o cd está.
+
 
 // Commits -  é uma confirmaçao de que informamos o repesitorio  que os arquivos que estamos
 // adicionando sejam um pequeno pacote de adiçoes ou modificaçoes, que terao uma marca definitiva
@@ -74,7 +78,7 @@
 //  estar **commitados**.
 
 
-// git push origin master - envia os arquivos do repositorio local para o repositorio remoto.
+// git push origin main - envia os arquivos do repositorio local para o repositorio remoto.
 
 
 // Quando devo fazer um commit?
@@ -95,4 +99,13 @@
 
 
 
-// Como baicar arquivos do Github
+// Como baixar arquivos do Github
+
+//  git clone http://... - Cria uma copia exata no computador de todos os arquivos existentes em um 
+// repositorio remoto.
+
+
+
+//  se ja tiver baixado os arquivos e quiser atualiza-los
+
+//  git pull origin main
