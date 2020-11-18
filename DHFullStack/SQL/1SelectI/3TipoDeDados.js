@@ -30,9 +30,12 @@
 
 // * Dados de Texto:
 //   > CHAR (num) - o numero entre () indicara o numero exato de caracteres que o texto terá.
-//   > VARCHAR (num) - o numero entre () indicara o numero maximo de caracteres.
+//   > VARCHAR (num) - o numero entre () indicara o numero maximo de caracteres. Ele ocupa apenas
+//                     o espaço do numeros de caracteres escritos.
 //   > TEXT - determina dado do tipo texto sem limites de caracteres. Não é totalmente bom para o 
 //            desempenho. Normalmente usado para um post de blog, por exemplo.
+//   > ENUM - mal, regular, bom, muito bom, excelente// feminino, masculino, outros...
+
 
 
 // * Dados do tipo Data:

@@ -1,5 +1,9 @@
 //  Create, Drop e Alter
 
+// "A casa é o SCHEMA, os quartos são as TABELAS, e os móveis os DADOS"
+
+// Crie a Schema - escolha utf8 e apos Apply
+
 
 // *** Create table (new_tlb) - nos permite criar uma nova tabela. É necessario especificar o NOME da
 //                          tabela, suas COLUNAS com seus TIPOS e CONSTRAINTS.

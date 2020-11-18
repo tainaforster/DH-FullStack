@@ -17,6 +17,11 @@
 //  entidade FILMES poderiam ter os seguintes atributos: titulo, avaliaçao, data-de-lançamento,
 //  pais-de-origem...
 
+// *** Registro - linhas
+
+// *** Cardinalidade - onde relariona as informaçis de uma tabela com a outra
+
+
 // *** Chave primaria (PK - Primary key) - É um campo (ou combinaçao de campos) que identifica de 
 // forma exclusiva cada linha em uma tabela. Idto significa que nao pode haver duas linha em uma 
 // tabela com o mesmo PK. 
