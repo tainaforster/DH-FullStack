@@ -30,10 +30,15 @@
 
 // * Dados de Texto:
 //   > CHAR (num) - o numero entre () indicara o numero exato de caracteres que o texto terá.
+//                  EX: CHAR(100) → 100 caracteres (ocupa 100 caracteres sempre)
+
 //   > VARCHAR (num) - o numero entre () indicara o numero maximo de caracteres. Ele ocupa apenas
 //                     o espaço do numeros de caracteres escritos.
+//                     VARCHAR(100) → 100 caracteres (pode ocupar até X caracteres)
+
 //   > TEXT - determina dado do tipo texto sem limites de caracteres. Não é totalmente bom para o 
 //            desempenho. Normalmente usado para um post de blog, por exemplo.
+
 //   > ENUM - mal, regular, bom, muito bom, excelente// feminino, masculino, outros...
 
 
@@ -48,13 +53,44 @@
 
 
 // As colunas também podem ter restriçoes (Constraints) associadas. São restriçoes a nivel de 
-//  tabela. Eles sao especificados cia DDL. O servidor analisa-os na hora de alterar os registros.
+//  tabela. Eles sao especificados com DDL. O servidor analisa-os na hora de alterar os registros.
 
-// * Restriçoes:
-//   > NOTNULL - não aceita dados nulos (não estarao vazias) - os dados se tornam obrigatorios.
-//   > UNIQUE - os dados nao se repetitao entre as linhas, mesmo nao sendo PK.
-//   > DEFAULT - aumentará a si mesma a cada uma das linhas, desde que nao seja especificado um
-//               outro valor que o sobrescreva.
+
+
+// *** Restriçoes (Constraints): São restrições que criamos e que são analisadas pelo servidor no 
+//                               momento de modificar registros
+
+
+//   > PRIMARY KEY (PK) - Uma Primary Key (PK) é um identificador único. Dois registros não podem ter
+//                        a mesma chave primária. Não é obrigatório, mas é altamente recomendável que
+//                        cada tabela tenha uma PK, normalmente é o campo ID.
+
+//   > FOREIGN KEY (FK) - É utilizado para criar referência entre tabelas. Faz referência ao campo 
+//                        “id” da tabela primária.
+
+//   > NULL / NOTNULL - não aceita dados nulos (não estarao vazias) - os dados se tornam obrigatorios.
+//                      Significa que o valor desse campo não existe ou não é conhecido. NULL NÃO é 
+//                      vazio ou zero. Qualquer campo pode ser declarado NULL / NOT NULL. Quando 
+//                      armamos a estrutura da tabela, definimos se o campo pode aceitar valores nulos.
+
+
+//   > UNIQUE - Uma unique key é uma restrição que só permite valores únicos para um campo,mesmo nao 
+//              sendo PK. Exemplos: RG, CPF, CNPJ, E-mail .
+
+//   > DEFAULT - Caso ao inserir um registro não seja passado um valor para preencher determinado 
+//               campo, este campo pode assumir um valor DEFAULT. Exemplos: NULL, Valor Padrão 
+//               (Numérico, String, Boolean).
+
 //   > AUTO_INCREMENT - aumentará a si mesma a cada uma das linhas. Geralmente usado para o ID.
 
 
+// DDL é o conjunto de comandos SQL responsáveis pela definição dos dados, ou seja, pela criação de 
+// bancos, esquemas, tabelas, campos, tipos de dados, constraints, etc.
+
+// > ADD - adicionar campo
+// > MODIFY - modificar o tamanho do campo
+// > CHANGE - alterar o nome do campo e tipo primitivo
+// > RENAME - renomear campo
+// > DROP - deletar campo
+// > DROP DATABASE - exclui o banco e dados
+// > DROP TABLE - exclui a tabela

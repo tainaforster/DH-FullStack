@@ -3,6 +3,8 @@
 
 // SGBD - Sistema de Gerenciamento de Banco de Dados
 
+// SQL - Linguagem de Consulta Estruturada
+
 
 // Por motivo de segurança, controle, escalabilidade e poder de consulta é que surgiram os 
 // bancos de dados.

@@ -10,16 +10,29 @@
 // Estrutura:
 
 // *** Entidades - Dentro mdo sistema teremos entidades, que serao a representação de um objeto ou coisa
-//  da vida real. Para integra-los em nosso diagrama usa-se retangulos.
+//  da vida real. Para integra-los em nosso diagrama usa-se RETANGULOS.
 // Para o nome destas tabelas usa-se substantivos no plural.
+
 
 // *** Atributos - Estas sao as caracteristicas que irao definir cada entidade. Por exemplo: em uma
 //  entidade FILMES poderiam ter os seguintes atributos: titulo, avaliaçao, data-de-lançamento,
-//  pais-de-origem...
+//  pais-de-origem... Para integra-los em nosso diagrama usa-se CIRCULOS.
+
 
 // *** Registro - linhas
 
-// *** Cardinalidade - onde relariona as informaçis de uma tabela com a outra
+
+// *** Cardinalidade - onde relariona as informaçoes de uma tabela com a outra
+//         Um para um - 1:1   Pessoa ------ Dados pessoais
+//         Um para muitos - 1:N   Pessoa ------ Cartao
+//         Muitos para muitos - N:N   Cliente ------ Produto
+
+
+//  Conexão lógica entre entidades é representada por um losango. Podem ter atributos próprios. 
+//  EX:
+//               retangulo           losangulo        retangulo
+//              PROFESSORES-----------LECIONA-----------TURMAS
+
 
 
 // *** Chave primaria (PK - Primary key) - É um campo (ou combinaçao de campos) que identifica de 
