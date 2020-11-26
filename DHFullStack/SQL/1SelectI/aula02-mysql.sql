@@ -1,6 +1,6 @@
 /* criando banco de dados */
 CREATE DATABASE dh_node_fs10;
-
+      
 /* indicando qual banco de dados iremos trabalhar */
 USE dh_node_fs10;
 
